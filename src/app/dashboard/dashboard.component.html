@@ -5,15 +5,17 @@
     </nav>
     <div class="row">
       <app-metric class="col-sm-6"
-                  [title]="'CPU'"
-                  [description]="'utilization of CPU cores'"
                   [used]="cpu.used"
-                  [available]="cpu.available"></app-metric>
+                  [available]="cpu.available">
+        <metric-title>CPU</metric-title>
+        <metric-description>utilization of CPU cores</metric-description>
+      </app-metric>
       <app-metric  class="col-sm-6"
-                   [title]="'Memory'"
-                   [description]="'utilization of memory in GB'"
                    [used]="mem.used"
-                   [available]="mem.available"></app-metric>
+                   [available]="mem.available">
+        <metric-title>Memory</metric-title>
+        <metric-description>utilization of memory in GB</metric-description>
+      </app-metric>
     </div>
   </div>
 </div>

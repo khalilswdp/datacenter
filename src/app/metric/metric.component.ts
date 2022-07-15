@@ -6,8 +6,6 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./metric.component.css']
 })
 export class MetricComponent {
-  @Input() title: string = '';
-  @Input() description: string = ' ';
   // the underscore is a common convention for private properties
   private _value: number = 0;
   private _max: number = 100;
