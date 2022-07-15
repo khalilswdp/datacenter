@@ -17,3 +17,22 @@
     </div>
   </div>
 </div>
+
+<div class="container mt-2">
+  <div class="card card-block">
+    <div class="card-body">
+      <nav class="navbar navbar-dark bg-inverse mb-1">
+        <h1 class="navbar-brand mb-0">Cluster 1</h1>
+      </nav>
+      <table app-nodes class="table table-hover">
+        <tr app-nodes-row *ngFor="let node of cluster1" [node]="node"></tr>
+      </table>
+      <nav class="navbar navbar-dark bg-inverse mb-1">
+        <h1 class="navbar-brand mb-0">Cluster 2</h1>
+      </nav>
+      <table app-nodes class="table table-hover">
+        <tr app-nodes-row *ngFor="let node of cluster2" [node]="node"></tr>
+      </table>
+    </div>
+  </div>
+</div>

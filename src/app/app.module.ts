@@ -33,6 +33,5 @@ export class AppModule {
   // I like this:
   // angular projects and demos to actually learn from
   // https://angular.io/guide/lifecycle-hooks#oninit
-  // 4.5.1 Finally, we have a sample of using the ng-bootstrap Progress Bar component. Base
-  // I need to understand the difference between content child and view child
+  // p101 The dashboard now implements another section that contains the two cluster tables.
 }

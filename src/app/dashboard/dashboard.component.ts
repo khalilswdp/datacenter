@@ -8,7 +8,7 @@ interface Node {
   name: string,
   cpu: Metric,
   mem: Metric,
-}
+};
 
 @Component({
   selector: 'app-dashboard',
