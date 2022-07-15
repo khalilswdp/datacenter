@@ -8,11 +8,14 @@ import {Component, Input, OnInit} from '@angular/core';
 export class MetricComponent {
   @Input() title: string = '';
   @Input() description: string = ' ';
+  // the underscore is a common convention for private properties
   private _value: number = 0;
   private _max: number = 100;
 
+  // this is how you define a setter in typescript
+  // preceded by set and the name of the method must match the name of the variable
   @Input('used')
-  set value(value: any) {
+  set value(value: number) {
     if (isNaN(value)) {
       value = 0;
     }
