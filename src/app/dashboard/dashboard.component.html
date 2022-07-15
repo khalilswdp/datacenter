@@ -1,1 +1,2 @@
-<p> {{ cluster1 | json }} </p>
+<app-metric [title]="'CPU'" [description]="'utilization of CPU cores'" [used]="cpu.used" [available]="cpu.available"></app-metric>
+<app-metric [title]="'Memory'" [description]="'utilization of memory in GB'" [used]="mem.used" [available]="mem.available"></app-metric>
