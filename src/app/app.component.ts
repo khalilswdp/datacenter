@@ -7,8 +7,9 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild(DashboardComponent) dashboard: DashboardComponent;
+  @ViewChild(DashboardComponent) dashboard!: DashboardComponent;
 
+  // We can have more logic handling here, refreshing multiple components or whatever we want, or even not possible in the html
   refresh() {
     this.dashboard.generateData();
   }
