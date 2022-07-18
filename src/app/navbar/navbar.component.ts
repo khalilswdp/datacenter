@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, EventEmitter, Output, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +8,12 @@ import {Component, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class NavbarComponent {
+  @Output() onRefresh: EventEmitter<null> = new EventEmitter<null>();
 
+  refresh() {
+    this.onRefresh.emit();
+    console.log("We're trying to refresh mate");
+  }
   constructor() { }
 
 }
