@@ -8,11 +8,11 @@ import {Component, EventEmitter, Output, ViewEncapsulation} from '@angular/core'
   encapsulation: ViewEncapsulation.Emulated
 })
 export class NavbarComponent {
+  // An event emitter that doesn't emit any data
   @Output() onRefresh: EventEmitter<null> = new EventEmitter<null>();
 
   refresh() {
     this.onRefresh.emit();
-    console.log("We're trying to refresh mate");
   }
   constructor() { }
 
