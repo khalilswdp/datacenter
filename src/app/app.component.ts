@@ -1,4 +1,7 @@
-import { Component, ViewChild, ComponentFactoryResolver, ComponentRef, ViewContainerRef } from '@angular/core';
+import {
+  Component,
+  ViewChild,
+} from '@angular/core';
 import {DashboardComponent} from "./dashboard/dashboard.component";
 
 @Component({
