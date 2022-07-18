@@ -22,6 +22,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   cluster1!: Node[];
   cluster2!: Node[];
   interval: any;
+  // maximum = NaN; // Infinity;
 
   ngOnInit(): void {
     this.generateData();

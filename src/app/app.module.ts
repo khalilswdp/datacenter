@@ -30,9 +30,10 @@ export class AppModule {
   // Table 4.1 on lifecycle hooks
   // https://angular.io/guide/lifecycle-hooks
   // Types of components and their characteristics 4.3
+  // I like content projection
 
   // I like this:
   // angular projects and demos to actually learn from
   // https://angular.io/guide/lifecycle-hooks#oninit
-  // p101 The dashboard now implements another section that contains the two cluster tables.
+  // 5.2
 }
