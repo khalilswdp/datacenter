@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {NgbActiveModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-nodes-detail',
@@ -6,8 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nodes-detail.component.css']
 })
 export class NodesDetailComponent implements OnInit {
+  @Input() node: any;
 
-  constructor() { }
+  constructor(public activeModal: NgbActiveModal) { }
+
+  isDanger(prop: any) {
+    return this.node[prop].used /this.node[prop].available > 0.7;
+  }
+
+  getType(prop: any) {
+    return (this.isDanger(prop)) ? 'danger' : 'success';
+  }
 
   ngOnInit(): void {
   }

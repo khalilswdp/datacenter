@@ -26,7 +26,8 @@ import { NodesDetailComponent } from './nodes-detail/nodes-detail.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA]
+  schemas: [NO_ERRORS_SCHEMA],
+  entryComponents: [NodesDetailComponent]
 })
 export class AppModule {
   // Table 4.1 on lifecycle hooks
@@ -37,5 +38,5 @@ export class AppModule {
   // I like this:
   // angular projects and demos to actually learn from
   // https://angular.io/guide/lifecycle-hooks#oninit
-  // 5.4.1
+  // 5.4.2
 }
