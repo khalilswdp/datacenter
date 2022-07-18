@@ -1,4 +1,5 @@
 import { Component, ViewChild, ComponentFactoryResolver, ComponentRef, ViewContainerRef } from '@angular/core';
+import {DashboardComponent} from "./dashboard/dashboard.component";
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,9 @@ import { Component, ViewChild, ComponentFactoryResolver, ComponentRef, ViewConta
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChild(DashboardComponent) dashboard: DashboardComponent;
 
-  constructor(private ComponentFactoryResolver: ComponentFactoryResolver) {}
-
+  refresh() {
+    this.dashboard.generateData();
+  }
 }
