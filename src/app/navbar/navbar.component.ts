@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +7,8 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   styles: [`.btn { background-color: #999999; }`],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
