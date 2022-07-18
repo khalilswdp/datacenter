@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MetricComponent } from './metric/metric.component';
 import { NodesComponent } from './nodes/nodes.component';
 import { NodesRowComponent } from './nodes-row/nodes-row.component';
+import { NodesDetailComponent } from './nodes-detail/nodes-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NodesRowComponent } from './nodes-row/nodes-row.component';
     DashboardComponent,
     MetricComponent,
     NodesComponent,
-    NodesRowComponent
+    NodesRowComponent,
+    NodesDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -35,5 +37,5 @@ export class AppModule {
   // I like this:
   // angular projects and demos to actually learn from
   // https://angular.io/guide/lifecycle-hooks#oninit
-  // 5.2
+  // 5.4.1
 }
